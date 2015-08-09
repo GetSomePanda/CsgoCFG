@@ -1,0 +1,30 @@
+author = "Panda";
+onLoadName = "Squad V Squad";
+onLoadMission = "Squad on Squad for the real combat !";
+joinUnassigned = 1;
+respawn = BASE;
+respawndelay = 5;
+disabledAI = true;
+disableChannels[]={0,1,2};
+enableDebugConsole = 1;
+respawnDialog = 0;
+wreckLimit = 3;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 320;
+corpseLimit = 150;
+corpseRemovalMinTime = 999;
+corpseRemovalMaxTime = 9999;
+
+#include "gui\GuiHandler.h"
+
+class Header
+{
+	gameType = Combat;
+	minPlayers = 1;
+	maxPlayers = 20;
+};
+
+class CfgFunctions
+{
+	#include "Functions.h"
+};
